@@ -11,5 +11,11 @@ Contains our attempt at implementing RM3 with Pyserini. Our attempt reveals that
 
 JavaException: JVM exception occurred: Format version is not supported
 
-## Experiment2g.ipynb
+## Experiment2.ipynb
 Contains our Anserini method for running the built in RM3 with BM25. It contains information concerding the index built, the running of improvement one on 200 test queries plus NDCG_cut extraction and running the improvement on the 500 training queries plus extraction of MRR and RR for each query. 
+
+## Experiment3.ipynb
+Contains the commands needed to build the index from the Doc2Query trained data. We run BM25 on this new index with the 200 test queries and extract the NDCG. We run BM25 on the 500 training queries and extract MRR and RR. We also run BM25 on the 500 developer queries and extract MRR and RR.
+
+## BM25+RM3+Doc2Query.ipynb
+Contains the experiment combining all three implementations from experiment 1-3. We run the solution on the 200 test queries, 500 training queries and 500 developer queries.
